@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: dimgray;
 }
 picture{
     max-width: 90%;
@@ -22,17 +23,21 @@ img:hover{
     border: 5px solid black;
     transition-timing-function: ease-in;
     transition: all 0.5s;
+    -o-transform: rotate(1deg) scale(1.03);
+    -ms-transform: rotate(1deg) scale(1.03);
+    -moz-transform: rotate(1deg) scale(1.03);
+    -webkit-transform: rotate(1deg) scale(1.03);
     transform: rotate(1deg) scale(1.03);
-    -o-box-shadow: 5px 5px 5px lightgray;
-    -ms-box-shadow: 5px 5px 5px lightgray;
-    -moz-box-shadow: 5px 5px 5px lightgray;
-    -webkit-box-shadow: 5px 5px 5px lightgray;
-    box-shadow: 5px 5px 5px lightgray;
+    -o-box-shadow: 5px 5px 5px grey;
+    -ms-box-shadow: 5px 5px 5px grey;
+    -moz-box-shadow: 5px 5px 5px grey;
+    -webkit-box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
 }
 ul li{
     width: 98%;
     height: auto;
-    float: left;
+    display: inline-block;
     list-style: none;
     margin: 1%;
 }
@@ -48,6 +53,6 @@ ul li{
 }
 @media all and (min-width: 1201px){
     ul li {
-        width: 23%;
+        width: 22%;
     }
 }
