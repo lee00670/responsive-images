@@ -18,11 +18,11 @@ img {
     border: 3px solid grey;
 }
 img:hover{
-    max-width: 93%;
     height: auto;
     border: 5px solid black;
     transition-timing-function: ease-in;
     transition: all 0.5s;
+    transform: rotate(1deg) scale(1.03);
 }
 ul li{
     width: 98%;
