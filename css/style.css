@@ -1,58 +1,51 @@
+/* 
+ATTRIBUTION
+All images used belong to:
+Markus Spiske - https://500px.com/markusspiske 
+Fahim Akhter - https://500px.com/fahimakhter
+Yinan Chen - https://500px.com/webmaster85
+
+3 Layouts
+1. Less than 600px - one column layout
+2. Between 600px and 1200px - two column layout
+3. Above 1200px - four column layout
+*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: dimgray;
 }
-picture{
-    max-width: 90%;
+ul li{
+    list-style: none;
+    float: left;
+    margin-top: 2.5%;
 }
-/* 
-image source: 
-Markus Spiske - https://500px.com/markusspiske 
-Fahim Akhter - https://500px.com/fahimakhter
-Yinan Chen - https://500px.com/webmaster85
-*/
 img {
-    max-width: 90%;
-    max-height: auto;
-    border: 3px solid grey;
+    max-width: 90%; 
+    border: 4px solid grey;
 }
 img:hover{
-    height: auto;
-    border: 5px solid black;
-    transition-timing-function: ease-in;
-    transition: all 0.5s;
-    -o-transform: rotate(1deg) scale(1.03);
-    -ms-transform: rotate(1deg) scale(1.03);
-    -moz-transform: rotate(1deg) scale(1.03);
-    -webkit-transform: rotate(1deg) scale(1.03);
-    transform: rotate(1deg) scale(1.03);
-    -o-box-shadow: 5px 5px 5px grey;
-    -ms-box-shadow: 5px 5px 5px grey;
-    -moz-box-shadow: 5px 5px 5px grey;
-    -webkit-box-shadow: 5px 5px 5px grey;
-    box-shadow: 5px 5px 5px grey;
+    border: 4px solid;
+    box-shadow: 2px 2px 2px darkgrey;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(3deg) scale(1.03);
+    z-index: 20;
 }
-ul li{
-    width: 98%;
-    height: auto;
-    display: inline-block;
-    list-style: none;
-    margin: 1%;
-}
-@media all and (min-width: 0px){
-    ul li {
-        width: 98%;
+
+@media screen and (min-width: 600px){
+    li {/* two column layout*/
+        width: 50%;
+    }
+    img:hover { /*transform of two column layout */
+        transform: translate(10px, 2px) skew(2deg, 3deg);
     }
 }
-@media all and (min-width: 600px){
-    ul li {
-        width: 43%;
+@media screen and (min-width: 1200px){
+    li { /* four column layout */
+        width: 25%;
     }
-}
-@media all and (min-width: 1201px){
-    ul li {
-        width: 22%;
+    img:hover { /*transform of four column layout*/
+        transform: scale(1.1);
     }
 }
